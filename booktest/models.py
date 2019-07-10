@@ -29,3 +29,6 @@ class HeroInfo(models.Model):
     hcomment = models.CharField(max_length=128)
     # 关系属性
     hbook = models.ForeignKey('BookInfo')
+
+    def __str__(self):
+        return self.hname
